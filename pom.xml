@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.xwiki.commons</groupId>
+		<artifactId>xwiki-commons-pom</artifactId>
+		<version>6.4.2</version>
+	</parent>
+
+	<groupId>org.xwiki.contrib</groupId>
+	<artifactId>xwiki-hpqc-macro</artifactId>
+	<packaging>pom</packaging>
+
+	<name>HPQC Macro Parent POM</name>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<developers>
+		<developer>
+			<id>4F2E4A2E</id>
+			<name>O.J. Sousa Rodrigues</name>
+			<email>osoriojaques@gmail.com</email>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:svn:https://github.com/4F2E4A2E/macro-hpqc/trunk/</connection>
+		<developerConnection>scm:svn:https://github.com/4F2E4A2E/macro-hpqc/trunk/</developerConnection>
+		<url>https://github.com/4F2E4A2E/macro-hpqc/trunk/</url>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>xwiki-staging</id>
+			<name>XWiki Staging Repository</name>
+			<url>http://nexus.xwiki.org/nexus/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+
+	<modules>
+		<module>xwiki-hpqc-macro-api</module>
+		<module>xwiki-hpqc-macro-application</module>
+	</modules>
+
+</project>
