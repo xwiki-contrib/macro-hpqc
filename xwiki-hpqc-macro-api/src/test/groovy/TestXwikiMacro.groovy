@@ -1,14 +1,12 @@
 ;
-import org.json.simple.*
 import org.junit.Test
 import org.xwiki.hpqc.api.HPQCMacro
 
-class TestHPQCMacro  {
+class TestXwikiMacro  {
 
 
     @Test
     public void test() {
-
 	/**
 	 * Credentials.
 	 */
@@ -25,44 +23,22 @@ class TestHPQCMacro  {
 	def HPQC_PROJECT_NAME = "";
 	def closedStatusValue = "Closed";
 
-
 	/**
-	 *Fetch the information from Xwiki.
+	 * XWIKI Information.
 	 */
-	def wikiname = doc.getDocument().getWikiName()
-	def customObject =
-		xwiki.getDocument("$wikiname:HPQCMacro.HPQCMacroConfiguration").getObject("$wikiname:HPQCMacro.HPQCMacroConfigurationClass")
-
-	if(null == customObject){
-	    wikiname = "xwiki"
-	    customObject =
-		    xwiki.getDocument("$wikiname:HPQCMacro.HPQCMacroConfiguration").getObject("$wikiname:HPQCMacro.HPQCMacroConfigurationClass")
-	}
-
-
-	HPQC_HOST_URL = customObject.getProperty("hpqcUrl").value
-	HPQC_PROJECT_USER = customObject.getProperty("hpqcUserName").value
-	HPQC_PROJECT_PASS = customObject.getProperty("hpqcUserPass").value
-
-
-	def params ="$xcontext.macro.params.params"
+	def tableSortableCfg = "(% class=\"sortable filterable doOddEven\" id=\"HPQCMacro\" %)"
+	def tableHeader ="(% class=\"sortHeader\" %)|= ID |= Tracker |= Status |= Thema "
 
 	/**
 	 * Fetching the data from HPQC.
 	 */
 	def hpqcMacro = new HPQCMacro(HPQC_HOST_URL, HPQC_DOMAIN_NAME, HPQC_PROJECT_NAME, HPQC_PROJECT_USER, HPQC_PROJECT_PASS)
+	def issuesList = hpqcMacro.getIssuesList("Test")
 
+
+	println tableSortableCfg
+	println tableHeader
 	try {
-	    def issuesList = hpqcMacro.getIssuesList(params)
-
-	    /**
-	     * Pass the information to the HPQC API.
-	     */
-	    def tableSortableCfg = "(% class=\"sortable filterable doOddEven\" id=\"HPQCMacro\" %)"
-	    def tableHeader ="(% class=\"sortHeader\" %)|= ID |= Tracker |= Status |= Thema "
-
-	    println tableSortableCfg
-	    println tableHeader
 
 	    for(entry in issuesList){
 
