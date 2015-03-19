@@ -13,7 +13,7 @@
 	<packaging>pom</packaging>
 
 	<name>HPQC Macro Parent POM</name>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 
 	<developers>
 		<developer>
@@ -24,9 +24,9 @@
 	</developers>
 
 	<scm>
-		<connection>scm:svn:https://github.com/4F2E4A2E/macro-hpqc/tags/xwiki-hpqc-macro-1.0.0</connection>
-		<developerConnection>scm:svn:https://github.com/4F2E4A2E/macro-hpqc/tags/xwiki-hpqc-macro-1.0.0</developerConnection>
-		<url>https://github.com/4F2E4A2E/macro-hpqc/tags/xwiki-hpqc-macro-1.0.0</url>
+		<connection>scm:svn:https://github.com/4F2E4A2E/macro-hpqc/trunk/</connection>
+		<developerConnection>scm:svn:https://github.com/4F2E4A2E/macro-hpqc/trunk/</developerConnection>
+		<url>https://github.com/4F2E4A2E/macro-hpqc/trunk/</url>
 	</scm>
 
 	<distributionManagement>
