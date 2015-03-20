@@ -26,7 +26,7 @@
 	<parent>
 		<groupId>org.xwiki.contrib</groupId>
 		<artifactId>xwiki-hpqc-macro</artifactId>
-		<version>1.0.1-SNAPSHOT</version>
+		<version>1.0.1</version>
 	</parent>
 
 	<artifactId>xwiki-hpqc-macro-application</artifactId>
