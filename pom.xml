@@ -24,9 +24,9 @@
 	</developers>
 
 	<scm>
-		<connection>scm:svn:https://github.com/4F2E4A2E/macro-hpqc/trunk/</connection>
-		<developerConnection>scm:svn:https://github.com/4F2E4A2E/macro-hpqc/trunk/</developerConnection>
-		<url>https://github.com/4F2E4A2E/macro-hpqc/trunk/</url>
+		<connection>scm:svn:https://github.com/xwiki-contrib/macro-hpqc/trunk/</connection>
+		<developerConnection>scm:svn:https://github.com/xwiki-contrib/macro-hpqc/trunk/</developerConnection>
+		<url>https://github.com/xwiki-contrib/macro-hpqc/trunk/</url>
 	</scm>
 
 	<distributionManagement>
