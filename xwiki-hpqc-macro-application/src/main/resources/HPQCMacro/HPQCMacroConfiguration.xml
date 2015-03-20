@@ -52,6 +52,19 @@
 			<defaultWeb/>
 			<nameField/>
 			<validationScript/>
+			<hpqcCustomField>
+				<customDisplay/>
+				<disabled>0</disabled>
+				<name>hpqcCustomField</name>
+				<number>4</number>
+				<picker>0</picker>
+				<prettyName>HPQC Custom Field Name</prettyName>
+				<size>30</size>
+				<unmodifiable>0</unmodifiable>
+				<validationMessage/>
+				<validationRegExp/>
+				<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+			</hpqcCustomField>
 			<hpqcDomainName>
 				<customDisplay/>
 				<disabled>0</disabled>
@@ -95,7 +108,7 @@
 				<customDisplay/>
 				<disabled>0</disabled>
 				<name>hpqcUserName</name>
-				<number>4</number>
+				<number>5</number>
 				<picker>0</picker>
 				<prettyName>User Name</prettyName>
 				<size>30</size>
@@ -109,7 +122,7 @@
 				<customDisplay/>
 				<disabled>0</disabled>
 				<name>hpqcUserPass</name>
-				<number>5</number>
+				<number>6</number>
 				<picker>0</picker>
 				<prettyName>HPQC User Password</prettyName>
 				<size>30</size>
@@ -125,19 +138,19 @@
 		<className>HPQCMacro.HPQCMacroConfigurationClass</className>
 		<guid>582ba272-b26d-4e2b-b5d5-7aaaa0bf3a91</guid>
 		<property>
-			<hpqcDomainName/>
+			<hpqcDomainName></hpqcDomainName>
 		</property>
 		<property>
-			<hpqcProjectName/>
+			<hpqcProjectName></hpqcProjectName>
 		</property>
 		<property>
 			<hpqcUrl>http://localhost:8080</hpqcUrl>
 		</property>
 		<property>
-			<hpqcUserName/>
+			<hpqcUserName></hpqcUserName>
 		</property>
 		<property>
-			<hpqcUserPass/>
+			<hpqcUserPass></hpqcUserPass>
 		</property>
 	</object>
 	<object>

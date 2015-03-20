@@ -202,9 +202,9 @@ HPQC_HOST_URL = customObject.getProperty("hpqcUrl").value
 HPQC_PROJECT_USER = customObject.getProperty("hpqcUserName").value
 HPQC_PROJECT_PASS = customObject.getProperty("hpqcUserPass").value
 
-HPQC_ISSUE_CUSTOM = "user-14";
-HPQC_DOMAIN_NAME = "ZEPTA";
-HPQC_PROJECT_NAME = "zepta";
+HPQC_ISSUE_CUSTOM = customObject.getProperty("hpqcCustomField").value
+HPQC_DOMAIN_NAME = customObject.getProperty("hpqcDomainName").value
+HPQC_PROJECT_NAME = customObject.getProperty("hpqcProjectName").value
 
 
 def params ="$xcontext.macro.params.params"
