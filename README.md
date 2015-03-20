@@ -1,3 +1,3 @@
 # macro-hpqc
 Xwiki HPQC Macro
-Descrption: tbd soon
+Descrption: to be done soon
