@@ -162,7 +162,7 @@
 	$xwiki.jsfx.use("js/xwiki/table/tablefilterNsort.js", true)
 {{/velocity}}
 
-{{groovy jars="attach:json-simple-1.1.1.jar"}}
+{{groovy}}
 
 import org.xwiki.hpqc.api.HPQCMacro
 import org.json.simple.*
