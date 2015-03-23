@@ -46,7 +46,7 @@
     <connection>scm:git:git://github.com/xwiki-contrib/macro-hpqc.git</connection>
     <developerConnection>scm:git:git@github.com:xwiki-contrib/macro-hpqc.git</developerConnection>
     <url>https://github.com/xwiki-contrib/macro-hpqc</url>
-    <tag>macro-hpqc-1.0.5</tag>
+    <tag>HEAD</tag>
   </scm>
   <distributionManagement>
     <repository>
