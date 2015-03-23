@@ -34,7 +34,7 @@
   <description>Displays issues from a HP Quality Center instance</description>
   <packaging>pom</packaging>
   <name>HPQC Macro - Parent POM</name>
-  <version>1.0.6-SNAPSHOT</version>
+  <version>1.0.6</version>
   <developers>
     <developer>
       <id>4F2E4A2E</id>
@@ -46,7 +46,7 @@
     <connection>scm:git:git://github.com/xwiki-contrib/macro-hpqc.git</connection>
     <developerConnection>scm:git:git@github.com:xwiki-contrib/macro-hpqc.git</developerConnection>
     <url>https://github.com/xwiki-contrib/macro-hpqc</url>
-    <tag>HEAD</tag>
+    <tag>macro-hpqc-1.0.6</tag>
   </scm>
   <distributionManagement>
     <repository>
