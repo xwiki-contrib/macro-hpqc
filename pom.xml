@@ -34,7 +34,7 @@
   <description>Displays issues from a HP Quality Center instance</description>
   <packaging>pom</packaging>
   <name>HPQC Macro - Parent POM</name>
-  <version>1.0.5-SNAPSHOT</version>
+  <version>1.0.6-SNAPSHOT</version>
   <developers>
     <developer>
       <id>4F2E4A2E</id>
