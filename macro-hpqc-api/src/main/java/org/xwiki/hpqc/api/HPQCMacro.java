@@ -68,7 +68,7 @@ public class HPQCMacro {
      */
     public HPQCMacro(String hpqc_host_url, String hpqc_domain_name, String hpqc_project_name, String userName, String password) {
 	this.hpqc_host_url = hpqc_host_url;
-	this.hpqc_hyperlink_url = String.format("testdirector:%s/qcbin,%s,%s,[AnyUser]", hpqc_host_url, hpqc_domain_name, hpqc_project_name);
+	this.hpqc_hyperlink_url = String.format("testdirector:%s/qcbin,%s,%s,[AnyUser]", hpqc_host_url.replaceAll("https://", "").replaceAll("http://", ""), hpqc_domain_name, hpqc_project_name);
 	this.hpqc_path_query_favorites = String.format("qcbin/rest/domains/%s/projects/%s/favorites", hpqc_domain_name, hpqc_project_name);
 	this.hpqc_path_query_defects = String.format("qcbin/rest/domains/%s/projects/%s/defects", hpqc_domain_name, hpqc_project_name);
 
@@ -385,7 +385,9 @@ public class HPQCMacro {
 	    /**
 	     * Adding hyper link.
 	     */
-	    result.put(MACRO_HYPERLINK, String.format("%s;%s:%s", hpqc_hyperlink_url, result.get(HPQC_JSON_MODEL_TYPE), result.get(HPQC_JSON_MODEL_ID)));
+	    
+        String hyperlinkValue = String.format("%s;%s:%s", hpqc_hyperlink_url, result.get(HPQC_JSON_MODEL_TYPE), result.get(HPQC_JSON_MODEL_ID));
+	    result.put(MACRO_HYPERLINK, hyperlinkValue);
 
 	} catch (IOException | ParseException e) {
 	    // TODO error handling
