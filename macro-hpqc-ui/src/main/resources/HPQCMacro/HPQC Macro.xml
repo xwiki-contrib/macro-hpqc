@@ -168,6 +168,12 @@ import org.xwiki.hpqc.api.HPQCMacro
 import org.json.simple.*
 
 /**
+ * Creating random id
+ */
+def random = new Random()
+def randomInt = random.nextInt(200-100+1)+100
+
+/**
  * Credentials.
  */
 def HPQC_PROJECT_USER = ""
@@ -220,7 +226,7 @@ try {
         /**
          * Pass the information to the HPQC API.
          */
-        def tableSortableCfg = "(% class=\"sortable filterable doOddEven\" id=\"HPQCMacro\" %)"
+        def tableSortableCfg = "(% class=\"sortable filterable doOddEven\" id=\"HPQCMacro-${randomInt}\" %)"
         def tableHeader ="(% class=\"sortHeader\" %)|= ID |= Tracker |= Status |= Thema "
 
         println tableSortableCfg
