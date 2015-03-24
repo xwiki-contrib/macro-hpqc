@@ -27,7 +27,7 @@
   <parent>
     <groupId>org.xwiki.contrib.hpqc</groupId>
     <artifactId>macro-hpqc</artifactId>
-    <version>1.0.7</version>
+    <version>1.0.8-SNAPSHOT</version>
   </parent>
   <artifactId>macro-hpqc-ui</artifactId>
   <name>HPQC Macro - UI</name>
