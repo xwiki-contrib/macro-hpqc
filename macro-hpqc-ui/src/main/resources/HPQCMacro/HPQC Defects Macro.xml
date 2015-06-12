@@ -257,13 +257,13 @@ try {
 			<defaultCategory/>
 		</property>
 		<property>
-			<description>List Issues from HPQC.</description>
+			<description>List Defects from HPQC.</description>
 		</property>
 		<property>
 			<id>hpqcDefects</id>
 		</property>
 		<property>
-			<name>HPQC Ticket</name>
+			<name>HPQC Defects</name>
 		</property>
 		<property>
 			<supportsInlineMode>1</supportsInlineMode>
