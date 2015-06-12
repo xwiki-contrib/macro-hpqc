@@ -21,143 +21,143 @@
 -->
 
 <xwikidoc>
-	<web>HPQCMacro</web>
-	<name>HPQC Defects Macro</name>
-	<language/>
-	<defaultLanguage/>
-	<translation>0</translation>
-	<parent>HPQCMacro.WebHome</parent>
-	<creator>xwiki:XWiki.Admin</creator>
-	<author>xwiki:XWiki.Admin</author>
-	<customClass/>
-	<contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-	<creationDate>1502393454000</creationDate>
-	<date>1426765419000</date>
-	<contentUpdateDate>1426762210000</contentUpdateDate>
-	<version>1.1</version>
-	<title/>
-	<defaultTemplate/>
-	<validationScript/>
-	<comment/>
-	<minorEdit>false</minorEdit>
-	<syntaxId>xwiki/2.1</syntaxId>
-	<hidden>true</hidden>
-	<object>
-		<class>
-			<name>XWiki.WikiMacroClass</name>
-			<customClass/>
-			<customMapping/>
-			<defaultViewSheet/>
-			<defaultEditSheet/>
-			<defaultWeb/>
-			<nameField/>
-			<validationScript/>
-			<code>
-				<disabled>0</disabled>
-				<name>code</name>
-				<number>9</number>
-				<prettyName>Macro code</prettyName>
-				<rows>20</rows>
-				<size>40</size>
-				<unmodifiable>0</unmodifiable>
-				<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-			</code>
-			<contentDescription>
-				<disabled>0</disabled>
-				<name>contentDescription</name>
-				<number>8</number>
-				<prettyName>Content description (Not applicable for "No content" type)</prettyName>
-				<rows>5</rows>
-				<size>40</size>
-				<unmodifiable>0</unmodifiable>
-				<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-			</contentDescription>
-			<contentType>
-				<cache>0</cache>
-				<disabled>0</disabled>
-				<displayType>select</displayType>
-				<multiSelect>0</multiSelect>
-				<name>contentType</name>
-				<number>7</number>
-				<prettyName>Macro content type</prettyName>
-				<relationalStorage>0</relationalStorage>
-				<separator>|</separator>
-				<separators>|</separators>
-				<size>1</size>
-				<unmodifiable>0</unmodifiable>
-				<values>Optional|Mandatory|No content</values>
-				<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-			</contentType>
-			<defaultCategory>
-				<disabled>0</disabled>
-				<name>defaultCategory</name>
-				<number>4</number>
-				<prettyName>Default category</prettyName>
-				<size>30</size>
-				<unmodifiable>0</unmodifiable>
-				<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-			</defaultCategory>
-			<description>
-				<disabled>0</disabled>
-				<name>description</name>
-				<number>3</number>
-				<prettyName>Macro description</prettyName>
-				<rows>5</rows>
-				<size>40</size>
-				<unmodifiable>0</unmodifiable>
-				<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-			</description>
-			<id>
-				<disabled>0</disabled>
-				<name>id</name>
-				<number>1</number>
-				<prettyName>Macro id</prettyName>
-				<size>30</size>
-				<unmodifiable>0</unmodifiable>
-				<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-			</id>
-			<name>
-				<disabled>0</disabled>
-				<name>name</name>
-				<number>2</number>
-				<prettyName>Macro name</prettyName>
-				<size>30</size>
-				<unmodifiable>0</unmodifiable>
-				<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-			</name>
-			<supportsInlineMode>
-				<disabled>0</disabled>
-				<displayFormType>select</displayFormType>
-				<displayType>yesno</displayType>
-				<name>supportsInlineMode</name>
-				<number>5</number>
-				<prettyName>Supports inline mode</prettyName>
-				<unmodifiable>0</unmodifiable>
-				<classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
-			</supportsInlineMode>
-			<visibility>
-				<cache>0</cache>
-				<disabled>0</disabled>
-				<displayType>select</displayType>
-				<multiSelect>0</multiSelect>
-				<name>visibility</name>
-				<number>6</number>
-				<prettyName>Macro visibility</prettyName>
-				<relationalStorage>0</relationalStorage>
-				<separator>|</separator>
-				<separators>|</separators>
-				<size>1</size>
-				<unmodifiable>0</unmodifiable>
-				<values>Current User|Current Wiki|Global</values>
-				<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-			</visibility>
-		</class>
-		<name>HPQCMacro.HPQC Defects Macro</name>
-		<number>0</number>
-		<className>XWiki.WikiMacroClass</className>
-		<guid>be484754-247b-45b6-8c75-6ee13206380e</guid>
-		<property>
-			<code>{{velocity}}
+  <web>HPQCMacro</web>
+  <name>HPQC Defects Macro</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>HPQCMacro.WebHome</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1502393454000</creationDate>
+  <date>1426765419000</date>
+  <contentUpdateDate>1426762210000</contentUpdateDate>
+  <version>1.1</version>
+  <title/>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <object>
+    <class>
+      <name>XWiki.WikiMacroClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>9</number>
+        <prettyName>Macro code</prettyName>
+        <rows>20</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <contentDescription>
+        <disabled>0</disabled>
+        <name>contentDescription</name>
+        <number>8</number>
+        <prettyName>Content description (Not applicable for "No content" type)</prettyName>
+        <rows>5</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </contentDescription>
+      <contentType>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>contentType</name>
+        <number>7</number>
+        <prettyName>Macro content type</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator>|</separator>
+        <separators>|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>Optional|Mandatory|No content</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </contentType>
+      <defaultCategory>
+        <disabled>0</disabled>
+        <name>defaultCategory</name>
+        <number>4</number>
+        <prettyName>Default category</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </defaultCategory>
+      <description>
+        <disabled>0</disabled>
+        <name>description</name>
+        <number>3</number>
+        <prettyName>Macro description</prettyName>
+        <rows>5</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </description>
+      <id>
+        <disabled>0</disabled>
+        <name>id</name>
+        <number>1</number>
+        <prettyName>Macro id</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </id>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>2</number>
+        <prettyName>Macro name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <supportsInlineMode>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>supportsInlineMode</name>
+        <number>5</number>
+        <prettyName>Supports inline mode</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </supportsInlineMode>
+      <visibility>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>visibility</name>
+        <number>6</number>
+        <prettyName>Macro visibility</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator>|</separator>
+        <separators>|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>Current User|Current Wiki|Global</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </visibility>
+    </class>
+    <name>HPQCMacro.HPQC Defects Macro</name>
+    <number>0</number>
+    <className>XWiki.WikiMacroClass</className>
+    <guid>be484754-247b-45b6-8c75-6ee13206380e</guid>
+    <property>
+      <code>{{velocity}}
 	$xwiki.ssfx.use("js/xwiki/table/table.css")
 	$xwiki.jsfx.use("js/xwiki/table/tablefilterNsort.js", true)
 {{/velocity}}
@@ -246,97 +246,97 @@ try {
 }
 {{/groovy}}
 			</code>
-		</property>
-		<property>
-			<contentDescription/>
-		</property>
-		<property>
-			<contentType>No content</contentType>
-		</property>
-		<property>
-			<defaultCategory/>
-		</property>
-		<property>
-			<description>List Defects from HPQC.</description>
-		</property>
-		<property>
-			<id>hpqcDefects</id>
-		</property>
-		<property>
-			<name>HPQC Defects</name>
-		</property>
-		<property>
-			<supportsInlineMode>1</supportsInlineMode>
-		</property>
-		<property>
-			<visibility>Global</visibility>
-		</property>
-	</object>
-	<object>
-		<class>
-			<name>XWiki.WikiMacroParameterClass</name>
-			<customClass/>
-			<customMapping/>
-			<defaultViewSheet/>
-			<defaultEditSheet/>
-			<defaultWeb/>
-			<nameField/>
-			<validationScript/>
-			<defaultValue>
-				<disabled>0</disabled>
-				<name>defaultValue</name>
-				<number>4</number>
-				<prettyName>Parameter default value</prettyName>
-				<size>30</size>
-				<unmodifiable>0</unmodifiable>
-				<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-			</defaultValue>
-			<description>
-				<disabled>0</disabled>
-				<name>description</name>
-				<number>2</number>
-				<prettyName>Parameter description</prettyName>
-				<rows>5</rows>
-				<size>40</size>
-				<unmodifiable>0</unmodifiable>
-				<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-			</description>
-			<mandatory>
-				<disabled>0</disabled>
-				<displayFormType>select</displayFormType>
-				<displayType>yesno</displayType>
-				<name>mandatory</name>
-				<number>3</number>
-				<prettyName>Parameter mandatory</prettyName>
-				<unmodifiable>0</unmodifiable>
-				<classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
-			</mandatory>
-			<name>
-				<disabled>0</disabled>
-				<name>name</name>
-				<number>1</number>
-				<prettyName>Parameter name</prettyName>
-				<size>30</size>
-				<unmodifiable>0</unmodifiable>
-				<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-			</name>
-		</class>
-		<name>HPQCMacro.HPQC Defects Macro </name>
-		<number>0</number>
-		<className>XWiki.WikiMacroParameterClass</className>
-		<guid>4489be66-9f68-4172-88d7-eaffa9153584</guid>
-		<property>
-			<defaultValue/>
-	</property>
-	<property>
-			<description>Please add your HPQC Issue Number or Favorite Name.</description>
-	</property>
-	<property>
-		<mandatory>1</mandatory>
-	</property>
-	<property>
-		<name>params</name>
-	</property>
-</object>
-<content />
+    </property>
+    <property>
+      <contentDescription/>
+    </property>
+    <property>
+      <contentType>No content</contentType>
+    </property>
+    <property>
+      <defaultCategory/>
+    </property>
+    <property>
+      <description>List Defects from HPQC.</description>
+    </property>
+    <property>
+      <id>hpqcDefects</id>
+    </property>
+    <property>
+      <name>HPQC Defects</name>
+    </property>
+    <property>
+      <supportsInlineMode>1</supportsInlineMode>
+    </property>
+    <property>
+      <visibility>Global</visibility>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.WikiMacroParameterClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <defaultValue>
+        <disabled>0</disabled>
+        <name>defaultValue</name>
+        <number>4</number>
+        <prettyName>Parameter default value</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </defaultValue>
+      <description>
+        <disabled>0</disabled>
+        <name>description</name>
+        <number>2</number>
+        <prettyName>Parameter description</prettyName>
+        <rows>5</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </description>
+      <mandatory>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>mandatory</name>
+        <number>3</number>
+        <prettyName>Parameter mandatory</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </mandatory>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Parameter name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+    </class>
+    <name>HPQCMacro.HPQC Defects Macro </name>
+    <number>0</number>
+    <className>XWiki.WikiMacroParameterClass</className>
+    <guid>4489be66-9f68-4172-88d7-eaffa9153584</guid>
+    <property>
+      <defaultValue/>
+    </property>
+    <property>
+      <description>Please add your HPQC Issue Number or Favorite Name.</description>
+    </property>
+    <property>
+      <mandatory>1</mandatory>
+    </property>
+    <property>
+      <name>params</name>
+    </property>
+  </object>
+  <content/>
 </xwikidoc>
