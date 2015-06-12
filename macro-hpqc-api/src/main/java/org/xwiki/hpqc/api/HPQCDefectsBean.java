@@ -30,7 +30,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-public class HPQCMacro {
+public class HPQCDefectsBean {
 
     private static final String APPLICATION_JSON = "application/json";
     private static final String MACRO_HYPERLINK = "macro-hyperlink";
@@ -49,7 +49,7 @@ public class HPQCMacro {
     private String hpqc_host_url = "";
     private String hpqc_hyperlink_url = "";
     private String hpqc_path_query_favorites = "";
-    private String hpqc_path_query_defects = "";
+    private String hpqc_path_query_service_type = "";
 
     private CloseableHttpClient httpclient = null;
     private CredentialsProvider credsProvider = new BasicCredentialsProvider();
@@ -66,11 +66,11 @@ public class HPQCMacro {
      * @param userName
      * @param password
      */
-    public HPQCMacro(String hpqc_host_url, String hpqc_domain_name, String hpqc_project_name, String userName, String password) {
+    public HPQCDefectsBean(String hpqc_host_url, String hpqc_domain_name, String hpqc_project_name, String userName, String password) {
 	this.hpqc_host_url = hpqc_host_url;
 	this.hpqc_hyperlink_url = String.format("testdirector:%s/qcbin,%s,%s,[AnyUser]", hpqc_host_url.replaceAll("https://", "").replaceAll("http://", ""), hpqc_domain_name, hpqc_project_name);
 	this.hpqc_path_query_favorites = String.format("qcbin/rest/domains/%s/projects/%s/favorites", hpqc_domain_name, hpqc_project_name);
-	this.hpqc_path_query_defects = String.format("qcbin/rest/domains/%s/projects/%s/defects", hpqc_domain_name, hpqc_project_name);
+	this.hpqc_path_query_service_type = String.format("qcbin/rest/domains/%s/projects/%s/defects", hpqc_domain_name, hpqc_project_name);
 
 	/**
 	 * Default Headers
@@ -179,7 +179,7 @@ public class HPQCMacro {
 
 	try {
 	    String favoriteQueryEncoded = URLEncoderRFC1738.encode(String.format("{%s}", favoriteQuery), "UTF-8");
-	    path = String.format("%s/%s/?query=%s", hpqc_host_url, hpqc_path_query_defects, favoriteQueryEncoded);
+	    path = String.format("%s/%s/?query=%s", hpqc_host_url, hpqc_path_query_service_type, favoriteQueryEncoded);
 	    HttpGet httpget = new HttpGet(path);
 
 	    /**
@@ -334,7 +334,7 @@ public class HPQCMacro {
 	HashMap<String, String> result = new HashMap<String, String>();
 
 	try {
-	    String path = String.format("%s/%s/%s", hpqc_host_url, hpqc_path_query_defects, id);
+	    String path = String.format("%s/%s/%s", hpqc_host_url, hpqc_path_query_service_type, id);
 	    HttpGet httpget = new HttpGet(path);
 
 	    /**

@@ -164,7 +164,7 @@
 
 {{groovy}}
 
-import org.xwiki.hpqc.api.HPQCMacro
+import org.xwiki.hpqc.api.HPQCDefectsBean
 import org.json.simple.*
 
 /**
@@ -218,7 +218,7 @@ def params ="$xcontext.macro.params.params"
 /**
  * Fetching the data from HPQC.
  */
-def hpqcMacro = new HPQCMacro(HPQC_HOST_URL, HPQC_DOMAIN_NAME, HPQC_PROJECT_NAME, HPQC_PROJECT_USER, HPQC_PROJECT_PASS)
+def hpqcMacro = new HPQCDefectsBean(HPQC_HOST_URL, HPQC_DOMAIN_NAME, HPQC_PROJECT_NAME, HPQC_PROJECT_USER, HPQC_PROJECT_PASS)
 
 try {
         def issuesList = hpqcMacro.getIssuesList(params)

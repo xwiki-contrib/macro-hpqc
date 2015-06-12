@@ -1,2 +1,3 @@
 org.xwiki.hpqc.api.URLEncoderRFC1738
-org.xwiki.hpqc.api.HPQCMacro
+org.xwiki.hpqc.api.HPQCDefectsBean
+org.xwiki.hpqc.api.HPQCRequirementsBean

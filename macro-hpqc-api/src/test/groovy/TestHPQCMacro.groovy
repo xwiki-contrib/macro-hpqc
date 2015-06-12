@@ -1,6 +1,7 @@
 ;
 import org.json.simple.*
 import org.junit.Test
+import org.xwiki.hpqc.api.HPQCDefectsBean
 import org.xwiki.hpqc.api.HPQCMacro
 
 class TestHPQCMacro  {
@@ -50,7 +51,7 @@ class TestHPQCMacro  {
 	/**
 	 * Fetching the data from HPQC.
 	 */
-	def hpqcMacro = new HPQCMacro(HPQC_HOST_URL, HPQC_DOMAIN_NAME, HPQC_PROJECT_NAME, HPQC_PROJECT_USER, HPQC_PROJECT_PASS)
+	def hpqcMacro = new HPQCDefectsBean(HPQC_HOST_URL, HPQC_DOMAIN_NAME, HPQC_PROJECT_NAME, HPQC_PROJECT_USER, HPQC_PROJECT_PASS)
 
 	try {
 	    def issuesList = hpqcMacro.getIssuesList(params)
