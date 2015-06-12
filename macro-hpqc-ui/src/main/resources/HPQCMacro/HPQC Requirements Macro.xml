@@ -22,7 +22,7 @@
 
 <xwikidoc>
 	<web>HPQCMacro</web>
-	<name>HPQC Defects Macro</name>
+	<name>HPQC Requirements Macro</name>
 	<language/>
 	<defaultLanguage/>
 	<translation>0</translation>
@@ -152,7 +152,7 @@
 				<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
 			</visibility>
 		</class>
-		<name>HPQCMacro.HPQC Defects Macro</name>
+		<name>HPQCMacro.HPQC Requirements Macro</name>
 		<number>0</number>
 		<className>XWiki.WikiMacroClass</className>
 		<guid>be484754-247b-45b6-8c75-6ee13206380e</guid>
@@ -195,12 +195,12 @@ def closedStatusValue = "Closed";
  */
 def wikiname = doc.getDocument().getWikiName()
 def customObject =
-	xwiki.getDocument("$wikiname:HPQCMacro.HPQCDefectsMacroConfiguration").getObject("$wikiname:HPQCMacro.HPQCDefectsMacroConfigurationClass")
+	xwiki.getDocument("$wikiname:HPQCMacro.HPQCRequirementsMacroConfiguration").getObject("$wikiname:HPQCMacro.HPQCRequirementsMacroConfigurationClass")
 
 if(null == customObject){
 	wikiname = "xwiki"
 	customObject =
-		xwiki.getDocument("$wikiname:HPQCMacro.HPQCDefectsMacroConfiguration").getObject("$wikiname:HPQCMacro.HPQCDefectsMacroConfigurationClass")
+		xwiki.getDocument("$wikiname:HPQCMacro.HPQCRequirementsMacroConfiguration").getObject("$wikiname:HPQCMacro.HPQCRequirementsMacroConfigurationClass")
 }
 
 
@@ -227,7 +227,7 @@ try {
          * Pass the information to the HPQC API.
          */
         def tableSortableCfg = "(% class=\"sortable filterable doOddEven\" id=\"HPQCMacro-${randomInt}\" %)"
-        def tableHeader ="(% class=\"sortHeader\" %)|=ID |=Status |=Tracker |=Thema "
+        def tableHeader ="(% class=\"sortHeader\" %)|=ID |=Status |=Tracker |=Thema"
 
         println tableSortableCfg
         println tableHeader
@@ -260,7 +260,7 @@ try {
 			<description>List Issues from HPQC.</description>
 		</property>
 		<property>
-			<id>hpqcDefects</id>
+			<id>hpqcRequirements</id>
 		</property>
 		<property>
 			<name>HPQC Ticket</name>
@@ -321,7 +321,7 @@ try {
 				<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
 			</name>
 		</class>
-		<name>HPQCMacro.HPQC Defects Macro </name>
+		<name>HPQCMacro.HPQC Requirements Macro </name>
 		<number>0</number>
 		<className>XWiki.WikiMacroParameterClass</className>
 		<guid>4489be66-9f68-4172-88d7-eaffa9153584</guid>
