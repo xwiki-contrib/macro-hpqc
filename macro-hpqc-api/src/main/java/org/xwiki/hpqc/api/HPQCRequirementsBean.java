@@ -28,6 +28,8 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class HPQCRequirementsBean {
 
@@ -55,6 +57,7 @@ public class HPQCRequirementsBean {
     private URI uri = null;
     private List<Header> headers = new ArrayList<Header>();
     private ResponseHandler<String> responseHandler = null;
+	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     /**
      * TODO add documentation
@@ -103,11 +106,9 @@ public class HPQCRequirementsBean {
 	    this.httpclient = HttpClients.custom().setDefaultCredentialsProvider(credsProvider).setDefaultHeaders(headers).build();
 	    getAuthentification();
 	} catch (IOException e) {
-	    // TODO error handling
-	    e.printStackTrace();
+		logger.error("Network error, please check the stack trace.", e);
 	} catch (URISyntaxException e) {
-	    // TODO error handling
-	    e.printStackTrace();
+		logger.error("URI syntax error, please check the stack trace.", e);
 	}
 	}
 
@@ -251,11 +252,9 @@ public class HPQCRequirementsBean {
 	    }
 
 	} catch (IOException e) {
-	    // TODO error handling
-	    e.printStackTrace();
+		logger.error("Network error, please check the stack trace.", e);
 	} catch (ParseException e) {
-	    // TODO error handling
-	    e.printStackTrace();
+		logger.error("Parse error, please check the stack trace.", e);
 	}
 
 		return result;
@@ -322,11 +321,9 @@ public class HPQCRequirementsBean {
 	    }
 
 	} catch (ParseException e) {
-	    // TODO error handling
-	    e.printStackTrace();
+		logger.error("Parse error, please check the stack trace.", e);
 	} catch (IOException e) {
-	    // TODO error handling
-	    e.printStackTrace();
+		logger.error("Network error, please check the stack trace.", e);
 	}
 
 		return result;
@@ -398,11 +395,9 @@ public class HPQCRequirementsBean {
 	    result.put(MACRO_HYPERLINK, hyperlinkValue);
 
 	} catch (IOException e) {
-	    // TODO error handling
-	    e.printStackTrace();
+		logger.error("Network error, please check the stack trace.", e);
 	} catch (ParseException e) {
-	    // TODO error handling
-	    e.printStackTrace();
+		logger.error("Parse error, please check the stack trace.", e);
 	}
 
 		return result;
@@ -416,9 +411,9 @@ public class HPQCRequirementsBean {
      */
     private void logRequest(CloseableHttpResponse response, HttpGet httpget) {
 	// TODO add logging
-	// System.out.println("----------------------------------------");
-	// System.out.println("Executing request " + httpget.getRequestLine());
-	// System.out.println(response.getStatusLine());
+		logger.debug("----------------------------------------");
+		logger.debug("Executing request " + httpget.getRequestLine());
+		logger.debug(response.getStatusLine().toString());
     }
 
     /**
