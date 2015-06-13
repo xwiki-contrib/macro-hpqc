@@ -103,11 +103,14 @@ public class HPQCDefectsBean {
 	    this.credsProvider.setCredentials(new AuthScope(uri.getHost(), uri.getPort(), AuthScope.ANY_REALM), new UsernamePasswordCredentials(userName, password));
 	    this.httpclient = HttpClients.custom().setDefaultCredentialsProvider(credsProvider).setDefaultHeaders(headers).build();
 	    getAuthentification();
-	} catch (IOException | URISyntaxException e) {
+	} catch (IOException e) {
+	    // TODO error handling
+	    e.printStackTrace();
+	} catch (URISyntaxException e) {
 	    // TODO error handling
 	    e.printStackTrace();
 	}
-    }
+	}
 
     /**
      * TODO add documentation
@@ -248,12 +251,15 @@ public class HPQCDefectsBean {
 
 	    }
 
-	} catch (IOException | ParseException e) {
+	} catch (IOException e) {
+	    // TODO error handling
+	    e.printStackTrace();
+	} catch (ParseException e) {
 	    // TODO error handling
 	    e.printStackTrace();
 	}
 
-	return result;
+		return result;
     }
 
     /**
@@ -316,12 +322,15 @@ public class HPQCDefectsBean {
 
 	    }
 
-	} catch (ParseException | IOException e) {
+	} catch (ParseException e) {
+	    // TODO error handling
+	    e.printStackTrace();
+	} catch (IOException e) {
 	    // TODO error handling
 	    e.printStackTrace();
 	}
 
-	return result;
+		return result;
     }
 
     /**
@@ -389,12 +398,15 @@ public class HPQCDefectsBean {
         String hyperlinkValue = String.format("%s;%s:%s", hpqc_hyperlink_url, result.get(HPQC_JSON_MODEL_TYPE), result.get(HPQC_JSON_MODEL_ID));
 	    result.put(MACRO_HYPERLINK, hyperlinkValue);
 
-	} catch (IOException | ParseException e) {
+	} catch (IOException e) {
+	    // TODO error handling
+	    e.printStackTrace();
+	} catch (ParseException e) {
 	    // TODO error handling
 	    e.printStackTrace();
 	}
 
-	return result;
+		return result;
     }
 
     /**
@@ -414,9 +426,6 @@ public class HPQCDefectsBean {
      * Returning a default error object to inform the user.
      * 
      * @param id
-     * @param name
-     * @param status
-     * @param custom
      * @return
      */
     private HashMap<String, String> getErrorIssue(String id) {
