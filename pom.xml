@@ -24,17 +24,25 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <parent>
     <groupId>org.xwiki.commons</groupId>
     <artifactId>xwiki-commons-pom</artifactId>
-    <version>6.4.2</version>
+    <version>5.4.7</version>
   </parent>
+
   <groupId>org.xwiki.contrib.hpqc</groupId>
   <artifactId>macro-hpqc</artifactId>
-  <description>Displays issues from a HP Quality Center instance</description>
+  <version>1.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
+
   <name>HPQC Macro - Parent POM</name>
-  <version>1.0.8-SNAPSHOT</version>
+  <description>Displays Defects and Requirements from a HP Quality Center instance via ID or Favorites.</description>
+
+  <properties>
+          <global.moduleVersion>1.1.0-SNAPSHOT</global.moduleVersion>
+  </properties>
+
   <developers>
     <developer>
       <id>4F2E4A2E</id>
@@ -42,12 +50,14 @@
       <email>osoriojaques@gmail.com</email>
     </developer>
   </developers>
+
   <scm>
     <connection>scm:git:git://github.com/xwiki-contrib/macro-hpqc.git</connection>
     <developerConnection>scm:git:git@github.com:xwiki-contrib/macro-hpqc.git</developerConnection>
     <url>https://github.com/xwiki-contrib/macro-hpqc</url>
     <tag>HEAD</tag>
   </scm>
+
   <distributionManagement>
     <repository>
       <id>xwiki-staging</id>
@@ -55,8 +65,10 @@
       <url>http://nexus.xwiki.org/nexus/service/local/staging/deploy/maven2/</url>
     </repository>
   </distributionManagement>
+
   <modules>
     <module>macro-hpqc-api</module>
     <module>macro-hpqc-ui</module>
   </modules>
+
 </project>
