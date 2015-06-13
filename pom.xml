@@ -39,10 +39,6 @@
   <name>HPQC Macro - Parent POM</name>
   <description>Displays Defects and Requirements from a HP Quality Center instance via ID or Favorites.</description>
 
-  <properties>
-          <global.moduleVersion>1.1.0-SNAPSHOT</global.moduleVersion>
-  </properties>
-
   <developers>
     <developer>
       <id>4F2E4A2E</id>
