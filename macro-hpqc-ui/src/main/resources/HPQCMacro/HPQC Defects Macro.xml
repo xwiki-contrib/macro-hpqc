@@ -227,7 +227,7 @@ try {
          * Pass the information to the HPQC API.
          */
         def tableSortableCfg = "(% class=\"sortable filterable doOddEven\" id=\"HPQCMacro-${randomInt}\" %)"
-        def tableHeader ="(% class=\"sortHeader\" %)|=ID |=Status |=Tracker |=Thema "
+        def tableHeader ="(% class=\"sortHeader\" %)|=ID |=Anforderungs-ID |=Tracker |=Name "
 
         println tableSortableCfg
         println tableHeader

@@ -227,7 +227,7 @@ try {
          * Pass the information to the HPQC API.
          */
         def tableSortableCfg = "(% class=\"sortable filterable doOddEven\" id=\"HPQCMacro-${randomInt}\" %)"
-        def tableHeader ="(% class=\"sortHeader\" %)|=ID |=Status |=Tracker |=Thema"
+        def tableHeader ="(% class=\"sortHeader\" %)|=ID |=Anforderungs-ID |=Name |=Status |=Beschreibung"
 
         println tableSortableCfg
         println tableHeader
@@ -235,9 +235,9 @@ try {
 	for(entry in issuesList){
 
 	if(closedStatusValue.equalsIgnoreCase(entry.get("status"))) {
-		println "| --{{html}}&lt;a href=\"${entry.get('macro-hyperlink')}\"&gt;#${entry.get('id')}&lt;/a&gt;{{/html}}-- | --{{{${entry.get('status')}}}}-- | --{{{${entry.get(HPQC_ISSUE_CUSTOM)}}}}-- | --{{{${entry.get('name')}}}}--"
+		println "| --{{html}}&lt;a href=\"${entry.get('macro-hyperlink')}\"&gt;#${entry.get('id')}&lt;/a&gt;{{/html}}-- | --{{{${entry.get('name')}}}}-- | --{{{${entry.get('user-09')}}}}-- | --{{{${entry.get('description')}}}}--"
 	}else {
-		println "| {{html}}&lt;a href=\"${entry.get('macro-hyperlink')}\"&gt;#${entry.get('id')}&lt;/a&gt;{{/html}} | {{{${entry.get('status')}}}} | {{{${entry.get(HPQC_ISSUE_CUSTOM)}}}} | {{{${entry.get('name')}}}}"
+		println "| {{html}}&lt;a href=\"${entry.get('macro-hyperlink')}\"&gt;#${entry.get('id')}&lt;/a&gt;{{/html}} | {{{${entry.get('name')}}}} | {{{${entry.get('user-09')}}}} | {{{${entry.get('description')}}}}"
 	}
 	}
 } catch( Exception e ){
