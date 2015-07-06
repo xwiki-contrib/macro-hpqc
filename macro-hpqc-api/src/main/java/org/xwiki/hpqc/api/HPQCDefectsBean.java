@@ -183,7 +183,7 @@ public class HPQCDefectsBean {
 
 	try {
 	    String favoriteQueryEncoded = URLEncoderRFC1738.encode(String.format("{%s}", favoriteQuery), "UTF-8");
-	    path = String.format("%s/%s/?query=%s", hpqc_host_url, hpqc_path_query_service_type, favoriteQueryEncoded);
+	    path = String.format("%s/%s/?page-size=200&query=%s", hpqc_host_url, hpqc_path_query_service_type, favoriteQueryEncoded);
 	    HttpGet httpget = new HttpGet(path);
 
 	    /**
