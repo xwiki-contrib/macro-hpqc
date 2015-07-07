@@ -53,6 +53,11 @@ public class HPQCDefectsBean {
     private String hpqc_path_query_favorites = "";
     private String hpqc_path_query_service_type = "";
 
+    /**
+     * Query parameter: page-size value
+     */
+    private int row_size = 50;
+
     private CloseableHttpClient httpclient = null;
     private CredentialsProvider credsProvider = new BasicCredentialsProvider();
     private URI uri = null;
@@ -157,7 +162,7 @@ public class HPQCDefectsBean {
 		}
 	    } else {
 
-		List<HashMap<String, String>> issues = getIssuesByFavorite(param);
+		List<HashMap<String, String>> issues = getIssuesByFavorite(param, this.row_size);
 		if (null == issues) {
 		    issuesList.add(getErrorIssue(param));
 		} else {
@@ -175,7 +180,7 @@ public class HPQCDefectsBean {
      * @param param
      * @return
      */
-    private List<HashMap<String, String>> getIssuesByFavorite(String param) {
+    private List<HashMap<String, String>> getIssuesByFavorite(String param, int newRowSize) {
 
 	List<HashMap<String, String>> result = new ArrayList<HashMap<String, String>>();
 	String favoriteQuery = getFavoriteQuery(param);
@@ -183,7 +188,7 @@ public class HPQCDefectsBean {
 
 	try {
 	    String favoriteQueryEncoded = URLEncoderRFC1738.encode(String.format("{%s}", favoriteQuery), "UTF-8");
-	    path = String.format("%s/%s/?page-size=200&query=%s", hpqc_host_url, hpqc_path_query_service_type, favoriteQueryEncoded);
+        path = String.format("%s/%s/?page-size=%d&query=%s", hpqc_host_url, hpqc_path_query_service_type, newRowSize, favoriteQueryEncoded);
 	    HttpGet httpget = new HttpGet(path);
 
 	    /**
@@ -430,5 +435,13 @@ public class HPQCDefectsBean {
 	result.put(HPQC_ISSUE_ERROR_STATUS, id);
 
 	return result;
+    }
+
+    /**
+     * This method will set the page size parameter.
+     * @param newRowSize
+     */
+    public void setRow_size(final int newRowSize) {
+        this.row_size = newRowSize;
     }
 }
