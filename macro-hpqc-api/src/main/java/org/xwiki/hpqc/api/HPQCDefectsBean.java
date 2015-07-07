@@ -67,7 +67,7 @@ public class HPQCDefectsBean {
 
     /**
      * TODO add documentation
-     * 
+     *
      * @param hpqc_host_url
      * @param hpqc_domain_name
      * @param hpqc_project_name
@@ -120,10 +120,10 @@ public class HPQCDefectsBean {
 
     /**
      * TODO add documentation
-     * 
-     * @throws ClientProtocolException
-     * @throws IOException
-     * @throws URISyntaxException
+     *
+     * @throws org.apache.http.client.ClientProtocolException
+     * @throws java.io.IOException
+     * @throws java.net.URISyntaxException
      */
     private void getAuthentification() throws ClientProtocolException, IOException, URISyntaxException {
 
@@ -260,7 +260,7 @@ public class HPQCDefectsBean {
 	} catch (IOException e) {
 		logger.error("Network error, please check the stack trace.", e);
 	} catch (ParseException e) {
-		logger.error("Parsing error, please check the stack trace.", e);
+		logger.error("Parse error, please check the stack trace.", e);
 	}
 
 		return result;
@@ -441,7 +441,7 @@ public class HPQCDefectsBean {
      * This method will set the page size parameter.
      * @param newRowSize
      */
-    public void setRow_size(final int newRowSize) {
+    public void setRowSize(final int newRowSize) {
         this.row_size = newRowSize;
     }
 }

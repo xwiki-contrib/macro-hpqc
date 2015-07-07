@@ -51,6 +51,7 @@ public class HPQCRequirementsBean {
     private String hpqc_hyperlink_url = "";
     private String hpqc_path_query_favorites = "";
     private String hpqc_path_query_service_type = "";
+
     /**
      * Query parameter: page-size value
      */
@@ -110,7 +111,7 @@ public class HPQCRequirementsBean {
 	    this.httpclient = HttpClients.custom().setDefaultCredentialsProvider(credsProvider).setDefaultHeaders(headers).build();
 	    getAuthentification();
 	} catch (IOException e) {
-		logger.error("Network error, please check the stack trace.", e);
+	    logger.error("Network error, please check the stack trace.", e);
 	} catch (URISyntaxException e) {
 		logger.error("URI syntax error, please check the stack trace.", e);
 	}
@@ -414,14 +415,13 @@ public class HPQCRequirementsBean {
      * @param httpget
      */
     private void logRequest(CloseableHttpResponse response, HttpGet httpget) {
-	// TODO add logging
 		logger.debug("----------------------------------------");
 		logger.debug("Executing request " + httpget.getRequestLine());
 		logger.debug(response.getStatusLine().toString());
-    }
+	}
 
-    /**
-     * Returning a default error object to inform the user.
+	/**
+	 * Returning a default error object to inform the user.
      * 
      * @param id
      * @return
